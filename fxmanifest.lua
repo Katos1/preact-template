@@ -1,14 +1,16 @@
 fx_version "cerulean"
-
 author "Katos"
 description "Preact + Vite (TS) Boilerplate"
-version '1.0.0'
-game 'gta5'
 
-lua54 'yes'
+games {"gta5", "rdr3"}
+version "1.0.0"
 
-ui_page 'web/dist/index.html'
-files {'web/dist/index.html', 'web/dist/assets/*'}
+ui_page "web/dist/index.html"
 
-client_script "client/**/*"
-server_script "server/**/*"
+files {
+  "web/dist/index.html", 
+  "web/dist/assets/*"
+}
+
+client_script "client/**/*.lua"
+server_script "server/**/*.lua"
